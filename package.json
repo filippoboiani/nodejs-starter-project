@@ -24,16 +24,10 @@
   "scripts": {
     "tsc": "tsc",
     "build": "tsc",
+    "build:watch": "npm run build --watch",
     "start": "tsc && nodemon ./dist/server.js"
   },
-  "keywords": [
-    "Hyperledger",
-    "Blockchain",
-    "Fabric",
-    "REST Service",
-    "Node.js",
-    "Typescript"
-  ],
-  "author": "Filippo Boiani & Okan Arabaci",
+  "keywords": [],
+  "author": "Filippo Boiani",
   "license": "MIT"
 }
