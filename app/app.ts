@@ -1,9 +1,12 @@
 /* Express Web Application - REST API Host */
 import * as path from 'path';
 import express from 'express';
-import morgan from 'morgan';
 import * as bodyParser from 'body-parser';
+import morgan from 'morgan';
+import winston from './config/winston';
 import mongoose from 'mongoose';
+
+
 // App routes
 import { 
   baseRoutes,
@@ -22,7 +25,7 @@ class App {
     this.MONGO_PORT = Number(process.env.MONGO_PORT) || 27017;
     
     this
-      .setDBConnection()
+      //.setDBConnection()
       .setMiddlewares()
       .setRoutes();
   }
@@ -41,7 +44,7 @@ class App {
   }
 
   private setMiddlewares(): App {
-    this.express.use(morgan('dev'));
+    this.express.use(morgan('short', { stream: winston.stream })); // Put It in config file (ENV variable)
     this.express.use(bodyParser.json());
     this.express.use(bodyParser.urlencoded({ extended: false }));
     return this;
