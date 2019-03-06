@@ -1,6 +1,6 @@
 {
   "name": "rest-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic REST Service to make requests against the hyperledger fabric blockchain.",
   "main": "./dist/server.js",
   "dependencies": {
