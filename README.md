@@ -1,3 +1,4 @@
+#[UPDATED]
 # Using Typescript with Node JS
 
 In this article we will set up an [Express][1] application using [Typescript][2].
