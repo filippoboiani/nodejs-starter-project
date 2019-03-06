@@ -1,4 +1,5 @@
-# Node JS - Typescript - MongoDB - Docker
+#[UPDATED]
+# Using Typescript with Node JS
 
 This repo is intended for those who need an extremely simple [Express][1] application using [Typescript][2] and [MongoDB][3].
 
